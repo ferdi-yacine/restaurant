@@ -1,0 +1,406 @@
+
+
+#head {
+    display: block;
+    text-align: center;
+    box-sizing: border-box;
+    padding: 6% 6% 0% 6%;
+
+}
+
+#head h1 {
+    color: #111;
+    font-size: 2.7em;
+    width: 100%;
+    margin-bottom: 1.2rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+#head p {
+    color: #222222bb;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+#info {
+    display: flex;
+    background-color: #222;
+    padding: 3%;
+    margin: auto 2% 50px 2%;
+    border-radius: 1%;
+}
+
+
+
+.formContainer {
+    display: flex;
+    justify-content: space-between;
+    margin: 5% 10% 5% 5%;
+
+}
+
+.formContainer form {
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.formInput {
+    width: 45%;
+    height: 10%;
+    outline: none;
+    border: none;
+    background: none;
+    border-bottom: 2px solid #d1411e;
+    color: #ffffff;
+    font-size: 120%;
+}
+
+.formInput:focus {
+    border-bottom: 2px solid #fff;
+}
+
+
+.formContainer form textarea {
+    height: 10%;
+    margin-top: 8%;
+    background: none;
+    border: none;
+    border-bottom: 2px solid #d1411e;
+    color: #ffffff;
+    width: 90%;
+    font-size: 20px;
+    outline: none;
+    min-width: 80%;
+    max-width: 150%;
+}
+
+.formContainer form textarea:focus {
+    border-bottom: 2px solid #ffffff;
+}
+
+.button {
+    width: 30%;
+    border: none;
+    background-color: #d1411e;
+    border-radius: 3%;
+    color: #fff;
+    font-size: 1.2rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 425;
+    transition: all ease-out .2s;
+    padding: 5% 0 5% 0;
+}
+
+.button:hover {
+    background-color: rgba(255, 255, 255, 0.793);
+    color: #222;
+    transform: scale(1.05);
+    cursor: pointer;
+
+}
+
+.social-Menu ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.social-Menu ul li {
+
+    padding-right: 2%;
+}
+
+.social-Menu ul li .fa-brands {
+    font-size: 300%;
+    transition: .3s all ease;
+
+
+}
+
+.social-Menu ul li .fa-brands:hover {
+    
+    transform: scale(1.15);
+    
+}
+
+.social-Menu ul li a {
+    color: #222;
+}
+
+
+
+
+.social-Menu ul li :hover{
+    
+    color: rgba(255, 255, 255, 0.555);
+
+
+}
+
+@media screen and (min-width: 480px) {
+    #info img {
+       display: none;
+    }
+    #info{
+        width: 400px;
+        align-items: center;
+        margin: auto auto 50px auto;
+    }
+    .formContainer form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: center;
+        gap: 20px
+    }
+    .formInput{
+       width: 350px;
+    }
+
+    #head h1 {
+        font-size: 250%;
+    }
+
+    #head p {
+        font-size: 120%;
+    }
+
+
+    .formContainer input::placeholder {
+        font-size: 1rem;
+
+    }
+
+    .formContainer form textarea::placeholder {
+        font-size: 1rem;
+
+    }
+    #message{
+        width: 323px;
+        height: 54px;
+    }
+
+    .button {
+        margin-top: 1.2rem;
+        margin-bottom: 10px;
+        padding: 10px 5px 10px 5px;
+        width: 150px;
+        font-size: 1.1rem;
+    }
+
+    .social-Menu ul {
+        justify-content: center;
+
+    }
+
+    .social-Menu ul li {
+        font-size: 15px;
+        margin-right: 6%;
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    #info img {
+        display: block;
+        width: 250px; 
+    }
+    #info{
+        width: 600px;
+        align-items: center;
+        margin: auto auto 50px auto;
+    }
+   
+    .formContainer form{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        gap: 20px
+    }
+    .formInput{
+       width: 250px;
+    }
+
+    #head h1 {
+        font-size: 250%;
+    }
+
+    #head p {
+        font-size: 120%;
+    }
+
+
+    .formContainer input::placeholder {
+        font-size: 1rem;
+
+    }
+
+    .formContainer form textarea::placeholder {
+        font-size: 1rem;
+
+    }
+    #message{
+        width: 250px;
+        height: 54px;
+    }
+
+    .button {
+        margin-top: 1.2rem;
+        margin-bottom: 10px;
+        padding: 10px 5px 10px 5px;
+        width: 150px;
+        font-size: 1.1rem;
+    }
+
+    .social-Menu ul {
+        justify-content: center;
+
+    }
+
+    .social-Menu ul li {
+        font-size: 15px;
+        margin-right: 6%;
+    }
+
+
+
+
+}
+@media screen and (min-width: 1024px){
+    #info img {
+        display: block;
+        width: 300px; 
+    }
+    #info{
+        width: 900px;
+        align-items: center;
+       
+    }
+   
+    .formContainer form{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 20px
+    }
+    .formInput{
+       width: 210px;
+    }
+
+    #head h1 {
+        font-size: 300%;
+    }
+
+    #head p {
+        font-size: 120%;
+    }
+
+
+    .formContainer input::placeholder {
+        font-size: 1rem;
+
+    }
+
+    .formContainer form textarea::placeholder {
+        font-size: 1rem;
+
+    }
+    #message{
+        width: 250px;
+        height: 40px;
+    }
+
+    .button {
+        margin-top: 3rem;
+        margin-bottom: 10px;
+        padding: 10px 5px 10px 5px;
+        width: 150px;
+        font-size: 1.1rem;
+    }
+
+    .social-Menu ul {
+        justify-content: center;
+
+    }
+
+    .social-Menu ul li {
+        font-size: 15px;
+        margin-right: 6%;
+    }
+    #firstName,#lastName{
+        margin-bottom: 20px;
+    }
+
+}
+
+@media screen and (min-width: 1440px){
+    #info img {
+        display: block;
+        width: 350px; 
+    }
+    #info{
+        width: 1300px;
+        align-items: center;
+       
+    }
+   
+    .formContainer form{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .formInput{
+       width: 320px;
+      
+    }
+
+    #head h1 {
+        font-size: 300%;
+    }
+
+    #head p {
+        font-size: 150%;
+    }
+
+
+    .formContainer input::placeholder {
+        font-size: 1.3rem;
+
+    }
+
+    .formContainer form textarea::placeholder {
+        font-size: 1.3rem;
+
+    }
+    #message{
+        width: 250px;
+        height: 40px;
+    }
+
+    .button {
+        margin-top: 4rem;
+        margin-bottom: 10px;
+        padding: 15px 5px 15px 5px;
+        width: 250px;
+        font-size: 1.5rem;
+    }
+
+    .social-Menu ul {
+        justify-content: center;
+
+    }
+
+    .social-Menu ul li {
+        font-size: 15px;
+        margin-right: 2%;
+    }
+    #firstName,#email{
+        margin-right: 7px;
+    }
+    #firstName,#lastName{
+        margin-bottom: 30px;
+    }
+
+  
+
+}
